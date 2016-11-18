@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>second try at maze choice page</title>
+	<link rel="stylesheet" type="text/css" href="mazeChoice.css">
+
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+	<div class="jumbotron" >
+		  <h1>Login Successfule</h1> 
+
+	</div>
+
+
+<div class = "container-fluid">
+
+	<div id ="button">
+		<button type="button" id="logOut">Logout</button>
+	</div>
+
+		<div class="row">
+			  
+				    <a href="https://google.com/"><img  class = "col1" src ="./Images/expressjs.png" alt="express logo"/>
+				    </a>
+				
+			
+
+				
+					<a href="https://google.com/"><img  class = "col1" src ="./Images/pBeeJQDQ.png" alt="github logo"/>
+					    </a>
+					
+			
+				
+					 <a href="https://google.com/"><img  class = "col1" src ="./Images/icon_mongodb_by_xkneo.png" alt ="mongo logo"/>
+					    </a>
+				
+		</div>
+
+		<div class="row">
+
+					  		
+		    <a href="https://google.com/"><img  class = "col1" src ="./Images/homebrew_osx_logo.png" alt="homebrew logo"/>
+		    </a>
+		
+		
+			 <a href="https://google.com/"><img  class = "col1" src ="./Images/bootstrap-logo-vector-download.jpg" alt="bootstrap logo"/>
+			    </a>
+			
+		
+			 <a href="https://google.com/"><img  class = "col1" src ="./Images/Sublime_Text_Logo.png" alt="Sublime Logo"/>
+			    </a>
+		        					
+	     </div>  
+
+		<div class="row">
+
+		
+		    <a href="https://google.com/"><img class = "col1" id = "white" src ="./Images/jQurery.gif" alt="JQuery Logo"/>
+		    </a>
+		
+		
+
+			 <a href="https://google.com/"><img class = "col1" src ="./Images/html-5.png" alt="html 5 Logo"/>
+			    </a>
+			
+		
+			 <a href="https://google.com/"><img  class = "col1" src ="./Images/css-logo.jpg" alt="maze"/>
+			    </a>
+		</div>        					
+</div>
+
+
+
+<script>
+	
+			function logOut(){
+			console.log ('logging out');
+			$.post('/api/logout',
+				function (data){
+					console.log('data = ' + data);
+					window.location.href = "index.html";
+				}
+			);
+		}
+
+		// $(document).ready(function() {
+		// 	$('#logOut').click(logOut);
+		// });
+</script>
+
+</body>
+</html>

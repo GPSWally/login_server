@@ -1,0 +1,112 @@
+body {
+	margin:0;
+	padding:0;
+  	background-image: linear-gradient(yellow 8%, darkorange);
+	background-size: cover;
+}
+
+/*____________________________________________________________________________________________*/
+
+.jumbotron {
+	margin:0;
+	padding:0;
+	width: 100%;
+    background: linear-gradient (yellow, gold, orange, darkorange); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient( yellow, gold, orange, darkorange); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(yellow, gold, orange, darkorange); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(yellow, gold, orange, darkorange); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(yellow, gold, orange, darkorange);  /*Standard syntax (must be last) */
+    background-size: 1200% 1200%;
+    -webkit-animation: jumbo 15s ease infinite;
+	-moz-animation: jumbo 15s ease infinite;
+	animation: jumbo 15s ease infinite;*/
+}
+
+	
+@keyframes jumbo {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+    /*animating the background-position property not the colors.*/
+    /*need to animate perpendicular to your gradient otherwise won't see anything. 
+    Also need to have background-size of gradient be 1200% or there abouts to get the color shift.*/
+}
+@-webkit-keyframes jumbo {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes jumbo {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+/*-------------------------------------------------------------*/
+h1	{
+	text-align: center;
+	color: black;
+	font-size: 50px;
+	font-weight: bold;
+	font-family: 'Inconsolata', monospace;
+
+}
+
+h2 {
+	text-align: center;
+
+	color: crimson;
+	font-size: 40px;
+	font-weight: bold;
+	font-family: 'Inconsolata', monospace;
+	
+}
+
+#logOut {
+}
+
+
+
+/*----------Begin clickable images array------------------------------*/
+/** {
+   border: 1px solid black !important;
+}*/
+
+.container {
+	width: 100%;
+	margin-left:auto;
+	margin-right: auto;
+		
+}
+
+button { width: 70px; background-color: red; border-radius: 50%}
+#button {margin-left: 10%}
+
+.row {
+	width: 40%;
+	padding: 0;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 12px;
+	margin-bottom: 5px;
+}
+
+.col1 {
+	width: 32%
+	vertical-align: middle;
+	margin-left: 1.8%;
+	background-color: transparent;
+}
+
+#white { 
+	background-color: white;
+}
+
+img {
+	width: 30%;
+	opacity: 0.5; 
+	filter: alpha(opacity=50);
+}
+
+img:hover {
+	opacity: 1.0; filter: alpha(opacity=100);
+}

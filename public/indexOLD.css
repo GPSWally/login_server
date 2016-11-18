@@ -1,0 +1,89 @@
+body {
+	margin:0;
+	padding:0;
+  	background-image: url("./Images/marinebio_braincoral.jpg");
+	background-size: cover;
+}
+
+
+/** {
+   border: 1px solid red !important;
+}
+*/
+
+
+
+.row {
+	margin-left: 40px;
+	margin-right: 20 px;
+	margin-top : 20px;
+	margin-bottom : 20px;	
+}
+
+.jumbotron {
+	margin:0;
+	padding:0;
+	width: 100%;
+	background: palegreen;
+    background: -webkit-radial-gradient( honeydew, lemonchiffon, palegreen, lightblue, greenyellow, lightyellow, lightpink,  lemonchiffon, palegreen); /* For Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(honeydew,  lemonchiffon, palegreen, lightblue,  greenyellow, lightyellow, lightpink,  lemonchiffon, palegreen); /* For Opera 11.1 to 12.0 */
+    background: -moz-radial-gradient( honeydew, lemonchiffon, palegreen, lightblue, greenyellow, lightpink,  lemonchiffon, palegreen); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(honeydew, lemonchiffon, palegreen, lightblue,  greenyellow, lightpink,  lemonchiffon, palegreen);  /*Standard syntax (must be last) */
+    background-size: 1200% 1200%;
+    -webkit-animation: jumbo 10s ease infinite;
+	-moz-animation: jumbo 10s ease infinite;
+	animation: jumbo 10s ease infinite;
+}
+
+@keyframes jumbo {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:50% 0%}
+    /*animating the background-position property not the colors.*/
+    /*need to animate perpendicular to your gradient otherwise won't see anything. 
+    Also need to have background-size of gradient be 1200% or there abouts to get the color shift.*/
+}
+@-webkit-keyframes jumbo {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes jumbo {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:50% 0%}
+}
+
+
+h1, h2 {
+	text-align: center;
+	color: crimson;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Inconsolata', monospace;
+}
+
+#logInHere  {
+
+	float: center;
+    padding: 50px;
+    max-width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    border-width: 10px;
+    border-color: black;
+    font-size: 20px;
+    color: black;
+}
+
+#submit, #register {
+	float: center;
+	font-size: 20px;
+	color: black;
+	background-color: #ffcc00;
+	border-radius: 10px;
+}
+
+
+
+}
